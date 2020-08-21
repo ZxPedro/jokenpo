@@ -62,8 +62,7 @@ while (comecar == "jogar") do
     player.jogar
 
     puts "Você escolheu #{jogador}"
-    print "O bot escolheu: "
-    puts player.bot
+    puts "O bot escolheu: #{player.bot} "
     puts ("\n")
     
 
