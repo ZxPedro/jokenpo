@@ -45,14 +45,16 @@ class Jokenpo
     end
 end
 
-puts "--------------------------------------------"
-puts "|       Bem vindo ao Jokenpo em ruby       |"
-puts "|       Para começar digite jogar          |"
-puts "--------------------------------------------"
-comecar = gets.chomp
-
-while (comecar == "jogar") do
+loop do
     
+    puts "--------------------------------------------"
+    puts "|       Bem vindo ao Jokenpo em ruby       |"
+    puts "|       Para começar digite jogar          |"
+    puts "--------------------------------------------"
+    comecar = gets.chomp
+
+break if (comecar != 'jogar')
+
     print "Escolha pedra, papel ou tesoura? "
     jogador = gets.chomp
 
@@ -63,13 +65,4 @@ while (comecar == "jogar") do
 
     puts "Você escolheu #{jogador}"
     puts "O bot escolheu: #{player.bot} "
-    puts ("\n")
-    
-
-    puts "--------------------------------------------"
-    puts "|       Bem vindo ao Jokenpo em ruby       |"
-    puts "|       Para começar digite jogar          |"
-    puts "--------------------------------------------"
-    comecar = gets.chomp
-    puts ("\n")
 end
